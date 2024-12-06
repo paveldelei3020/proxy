@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  font-family: "Rubik";
+  color: #FFFFFF;
+  padding: 50px 150px;
+}
+
+.haider {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  color: #4F5665;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.haider-left {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.7px;
+  color: #0B132A;
+  display: flex;
+  align-items: center;
+}
+.haider-span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.7px;
+}
+.haider-center {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.haider-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.7px;
+  color: #0B132A;
+  color: #0B132A;
+}
+.haider-right-sign {
+  color: #F53855;
+  border: #F53855 solid 1px;
+  border-radius: 50px;
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
