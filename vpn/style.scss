@@ -7,6 +7,11 @@ line-height: 18.96px;
 color: #4F5665;
 }
 
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
 @mixin haider-right{
     font-weight: 500;
     line-height: 18.96px;
@@ -30,10 +35,17 @@ body{
     padding: 50px 150px;
 }
 
+@mixin shablon ($fs, $fw, $lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+
 .haider{
     @include haider();
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     &-left{
         @include haider-left();
@@ -68,7 +80,36 @@ body{
 }
 
 .main{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    
+    color: #4F5665;
+    &-left{
+        display: flex;
+        flex-direction: column;
+        &-p1{
+            @include shablon(50px,500 ,70px );
+            color: #0B132A;
+            margin-bottom: 20px;
+            
+        }
+        &-p2{
+            @include shablon(16px,400 ,30px );
+            margin: 0 0 50px 0;
+        }
+        &-span{
+            @include shablon(16px,500 ,30px );
+        }
+        &-button{
+            border: none;
+            background: #F53855;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+            height: 65px;
+            align-items: center;
+            border-radius: 10px;
+        }
+    }
 }
