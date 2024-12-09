@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.haider-left {
+.haider-1 {
   font-size: 20px;
   font-weight: 500;
   line-height: 23.7px;
@@ -30,12 +30,12 @@ body {
   font-weight: 700;
   line-height: 23.7px;
 }
-.haider-center {
+.haider-2 {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.haider-right {
+.haider-3 {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -44,7 +44,7 @@ body {
   line-height: 23.7px;
   color: #0B132A;
 }
-.haider-right-sign {
+.haider-3-sign {
   color: #F53855;
   border: #F53855 solid 1px;
   border-radius: 50px;

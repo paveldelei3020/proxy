@@ -11,11 +11,6 @@
     line-height: $lh;
 }
 
-@mixin reset {
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: 'Rubik';
     color: #FFFFFF;
@@ -25,15 +20,13 @@ body{
     justify-content: center;
 }
 
-
-
 .haider{
     @include shablon(16, 400, 18.96px);
     color: #4F5665;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &-left{
+    &-1{
         @include shablon(20px, 500, 23.7px);
         color: #0B132A;
         display: flex;
@@ -42,12 +35,12 @@ body{
     &-span{
         @include shablon(20px, 700, 23.7px);
     }
-    &-center{
+    &-2{
         display: flex;
         align-items: center;
         gap: 40px;
     }
-    &-right{
+    &-3{
         display: flex;
         align-items: center;
         gap: 30px;
