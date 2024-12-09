@@ -44,6 +44,8 @@ body{
     color: #FFFFFF;
     padding: 45.62px 150px;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -233,6 +235,94 @@ body{
     }
 }
 
-
+.cart{
+    display: flex;
+    gap: 50px;
+    margin: 0 26.02px 0 24.14px;
+    &1{
+        border: #DDDDDD solid 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 79.63px 69.87px 50px 69.87px;
+        border-radius: 10px;
+    }
+    &2{
+        border: #DDDDDD solid 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 79.63px 69.73px 50px 69.73px;
+        border-radius: 10px;
+    }
+    &3{
+        border: #F53838 solid 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 79.63px 69.73px 50px 69.73px;
+        border-radius: 10px;
+    }
+    &-p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: #4F5665;
+        margin-bottom: 10px;
+    }
+    &-h{
+        color: #0B132A;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        margin: 30px 0 30px 0;
+    }
+    &-number{
+        color: #0B132A;
+        margin-top: 120px;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+    }
+    &-res{
+        @include reset();
+    }
+    &-button{
+        border: #F53838 solid 2px;
+        color: #F53838;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        padding: 13px 62.94px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.96px;
+        margin-top: 20px;
+        &-red{
+            border: none;
+            background: #F53838;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18.96px;
+            border-radius: 50px;
+            padding: 13px 62.94px;
+        }
+    }
+    &-span{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: #4F5665;
+    }
+}
 
 
