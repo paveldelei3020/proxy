@@ -1,33 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-@mixin haider{
-font-size: 16px;
-font-weight: 400;
-line-height: 18.96px;
-color: #4F5665;
-}
-
 @mixin reset {
     margin: 0;
     padding: 0;
 }
 
-@mixin haider-right{
-    font-weight: 500;
-    line-height: 18.96px;
-}
-@mixin haider-left {
-font-size: 20px;
-font-weight: 500;
-line-height: 23.7px;
-color: #0B132A;
-}
-
-@mixin haider-span{
-font-size: 20px;
-font-weight: 700;
-line-height: 23.7px;
-}
 @mixin shablon ($fs, $fw, $lh){
     font-size: $fs;
     font-weight: $fw;
@@ -51,17 +28,19 @@ body{
 
 
 .haider{
-    @include haider();
+    @include shablon(16, 400, 18.96px);
+    color: #4F5665;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &-left{
-        @include haider-left();
+        @include shablon(20px, 500, 23.7px);
+        color: #0B132A;
         display: flex;
         align-items: center;
     }
     &-span{
-        @include haider-span();
+        @include shablon(20px, 700, 23.7px);
     }
     &-center{
         display: flex;
@@ -72,7 +51,7 @@ body{
         display: flex;
         align-items: center;
         gap: 30px;
-        @include haider-left();
+        @include shablon(20px, 500, 23.7px);
         color: #0B132A;
         &-sign{
             color: #F53855;
@@ -130,18 +109,13 @@ body{
     width: 1140px;
     margin: 103px 0 95.83px 0 ;
     color: #0B132A; 
-    &-left{
+    &-1{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 365.5px;
     }
-    &-column{
-        display: flex;
-        flex-direction: column; 
-        margin-left: 36.5px;        
-    }
-    &-center{
+    &-2{
         height: 125.57px;
         display: flex;
         align-items: center;
@@ -150,29 +124,31 @@ body{
         border-left: #EEEFF2 solid 2px; 
         border-right: #EEEFF2 solid 2px;
     }
-    &-right{
+    &-3{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 344.5px;
     }
+    &-col{
+        display: flex;
+        flex-direction: column; 
+        margin-left: 36.5px;        
+    }
 }
 
-.size-big{
+.text{
+    &-big{
     @include reset();
     color: #0B132A;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-}
+    @include shablon(25px, 700,30px);
+    }
 
-.size-small{
+    &-small{
     margin-top: 5px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+    @include shablon(20px, 400, 30px);
+    }
 }
-
 .functions{
     color: #0B132A;
     display: flex;
@@ -187,23 +163,17 @@ body{
         &-h{
             margin-top: 54.17px;
             @include reset();
-            font-size: 35px;
-            font-weight: 500;
-            line-height: 50px;
+            @include shablon(35px, 500, 50px);
         }
         &-h2{
             @include reset();
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 30px;
+            @include shablon(16px, 400, 30px);
             margin: 20px 0 12.5px 0;
         }
         &-p{
             margin: 7.5px;
             @include reset();
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 30px;
+            @include shablon(14px, 400, 30px);
             display: flex;
             align-items:center;
         }
@@ -217,17 +187,13 @@ body{
     flex-direction: column;
     &-h{
         @include reset();
-        font-size: 35px;
-        font-weight: 500;
-        line-height: 50px;
+        @include shablon(35px, 400, 50px);
         color: #0B132A;
         text-align: center;
     }
     &-text{
         @include reset();
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
+        @include shablon(16px, 400, 30px);
         color: #4F5665;
         text-align: center;
         margin-top: 20px;
@@ -264,9 +230,7 @@ body{
         border-radius: 10px;
     }
     &-p{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
+        @include shablon(14px, 400, 30px);
         display: flex;
         align-items: center;
         text-align: left;
@@ -275,18 +239,14 @@ body{
     }
     &-h{
         color: #0B132A;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 30px;
+        @include shablon(18px, 500, 30px);
         text-align: center;
         margin: 30px 0 30px 0;
     }
     &-number{
         color: #0B132A;
         margin-top: 120px;
-        font-size: 25px;
-        font-weight: 500;
-        line-height: 30px;
+        @include shablon(25px, 500, 30px);
         text-align: center;
     }
     &-res{
@@ -301,25 +261,19 @@ body{
         align-items: center;
         background: none;
         padding: 13px 62.94px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 18.96px;
+        @include shablon(16px, 700, 18.96px);
         margin-top: 20px;
         &-red{
             border: none;
             background: #F53838;
             color: #FFFFFF;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 18.96px;
+            @include shablon(16px, 700, 18.96px);
             border-radius: 50px;
             padding: 13px 62.94px;
         }
     }
     &-span{
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 30px;
+        @include shablon(25px, 400, 30px);
         text-align: center;
         color: #4F5665;
     }
@@ -327,16 +281,12 @@ body{
 
 .pre{
     &-span{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 30px;
+        @include shablon(16px, 500,30px );
         text-align: center;
     }
     &-marg{
         color: #0B132A;
-        font-size: 35px;
-        font-weight: 500;
-        line-height: 50px;
+        @include shablon(35px, 500, 50px);
         text-align: center;
         margin-top: 150px;
         margin-bottom: 20px;
@@ -357,4 +307,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.reviews{
+    &-h{
+        color: #0B132A;
+        @include shablon(35px, 500, 50px);
+        text-align: center;
+    }
+    &-p{
+        @include shablon(16px, 400, 30px);
+        text-align: center;
+    }
 }

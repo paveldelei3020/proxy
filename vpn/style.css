@@ -9,7 +9,7 @@ body {
 }
 
 .haider {
-  font-size: 16px;
+  font-size: 16;
   font-weight: 400;
   line-height: 18.96px;
   color: #4F5665;
@@ -42,7 +42,6 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 23.7px;
-  color: #0B132A;
   color: #0B132A;
 }
 .haider-right-sign {
@@ -106,18 +105,13 @@ body {
   margin: 103px 0 95.83px 0;
   color: #0B132A;
 }
-.main-flex-left {
+.main-flex-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 365.5px;
 }
-.main-flex-column {
-  display: flex;
-  flex-direction: column;
-  margin-left: 36.5px;
-}
-.main-flex-center {
+.main-flex-2 {
   height: 125.57px;
   display: flex;
   align-items: center;
@@ -126,14 +120,19 @@ body {
   border-left: #EEEFF2 solid 2px;
   border-right: #EEEFF2 solid 2px;
 }
-.main-flex-right {
+.main-flex-3 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 344.5px;
 }
+.main-flex-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36.5px;
+}
 
-.size-big {
+.text-big {
   margin: 0;
   padding: 0;
   color: #0B132A;
@@ -141,8 +140,7 @@ body {
   font-weight: 700;
   line-height: 30px;
 }
-
-.size-small {
+.text-small {
   margin-top: 5px;
   font-size: 20px;
   font-weight: 400;
@@ -199,7 +197,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 50px;
   color: #0B132A;
   text-align: center;
@@ -337,4 +335,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.reviews-h {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+}
+.reviews-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
