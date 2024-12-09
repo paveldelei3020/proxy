@@ -97,7 +97,7 @@ body {
   border-radius: 10px;
 }
 
-.main-grid {
+.main-flex {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -106,18 +106,18 @@ body {
   margin: 103px 0 95.83px 0;
   color: #0B132A;
 }
-.main-grid-left {
+.main-flex-left {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 365.5px;
 }
-.main-grid-column {
+.main-flex-column {
   display: flex;
   flex-direction: column;
   margin-left: 36.5px;
 }
-.main-grid-center {
+.main-flex-center {
   height: 125.57px;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@ body {
   border-left: #EEEFF2 solid 2px;
   border-right: #EEEFF2 solid 2px;
 }
-.main-grid-right {
+.main-flex-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,7 +204,7 @@ body {
   color: #0B132A;
   text-align: center;
 }
-.main2-p {
+.main2-text {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -305,4 +305,36 @@ body {
   line-height: 30px;
   text-align: center;
   color: #4F5665;
+}
+
+.pre-span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+.pre-marg {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 155.81px 41.02px 35.81px 39.14px;
+}
+
+.spons {
+  margin-left: -5px;
+  margin-right: 9.36px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
